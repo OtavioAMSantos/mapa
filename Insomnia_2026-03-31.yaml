@@ -1,0 +1,163 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Mapa de Sala - DS II - Fatec São Roque
+meta:
+  id: wrk_ddcfc4a6205741f2938ecc8ea4c2bf9d
+  created: 1773354443402
+  modified: 1773354443402
+  description: ""
+collection:
+  - name: sala
+    meta:
+      id: fld_00a5234824e843a79e2c69aa38aebcf1
+      created: 1773354552997
+      modified: 1773354552997
+      sortKey: -1773354552997
+      description: ""
+    children:
+      - url: http://localhost/mapa/index.php/Sala/inserir
+        name: inserir
+        meta:
+          id: req_de58b2d880184614be5c77ebeb2f03ba
+          created: 1773354662575
+          modified: 1774982465710
+          isPrivate: false
+          description: ""
+          sortKey: -1773354662575
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "108",
+                "descricao": "Sala de aula do Marcos",
+                "andar": "1",
+                "capacidade": "3"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Sala/consultar
+        name: consulta
+        meta:
+          id: req_bf296e9868ab4263a89065d2e13a3922
+          created: 1774982477067
+          modified: 1774982606331
+          isPrivate: false
+          description: ""
+          sortKey: -1774982477067
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "",
+                "descricao": "sala do marcos",
+                "andar": "",
+                "capacidade": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Sala/alterar
+        name: alterar
+        meta:
+          id: req_03a202617f3f420bacc4fecdae6724d1
+          created: 1774983049001
+          modified: 1774983164313
+          isPrivate: false
+          description: ""
+          sortKey: -1774983049001
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "um",
+                "descricao": "Teste",
+                "andar": "",
+                "capacidade": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Sala/desativar
+        name: desativar
+        meta:
+          id: req_000a9c746cf440549b43123a25c28fd4
+          created: 1774983175204
+          modified: 1774983252275
+          isPrivate: false
+          description: ""
+          sortKey: -1774983175204
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "um"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b19e8bd465c43b0a319dbe3632ebe12214a351fd
+    created: 1773354443406
+    modified: 1773354443406
+environments:
+  name: Base Environment
+  meta:
+    id: env_b19e8bd465c43b0a319dbe3632ebe12214a351fd
+    created: 1773354443404
+    modified: 1773354443404
+    isPrivate: false
