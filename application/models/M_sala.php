@@ -30,7 +30,7 @@ class M_sala extends CI_Model
                 if ($this->db->affected_rows() > 0) {
                     $dados = array(
                         'codigo' => 1,
-                        'msg' => 'Sala cadastrada corretamente'
+                        'msg' => 'Sala cadastrada corretamente.'
                     );
                 } else {
                     $dados = array(

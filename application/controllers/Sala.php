@@ -155,7 +155,8 @@ class Sala extends CI_Controller {
 
         // Monta retorno único
         if ($sucesso == true) {
-            $retorno = ['sucesso' => $sucesso, 'msg' => 'Sala cadastrada corretamente.'];
+            $retorno = ['sucesso' => $sucesso, 'codigo' => $resBanco['codigo'],
+            'msg' => $resBanco['msg']];
         } else {
             $retorno = ['sucesso' => $sucesso, 'erros' => $erros];
         }
