@@ -1,0 +1,294 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Mapa de Sala - DS II - Fatec São Roque
+meta:
+  id: wrk_ddcfc4a6205741f2938ecc8ea4c2bf9d
+  created: 1773354443402
+  modified: 1773354443402
+  description: ""
+collection:
+  - name: Sala
+    meta:
+      id: fld_00a5234824e843a79e2c69aa38aebcf1
+      created: 1773354552997
+      modified: 1775570737244
+      sortKey: -1773354552997
+      description: ""
+    children:
+      - url: http://localhost/mapa/index.php/Sala/inserir
+        name: inserir
+        meta:
+          id: req_de58b2d880184614be5c77ebeb2f03ba
+          created: 1773354662575
+          modified: 1775573233387
+          isPrivate: false
+          description: ""
+          sortKey: -1773354662575
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "1",
+                "descricao": "Sala de aula 01"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Sala/consultar
+        name: consulta
+        meta:
+          id: req_bf296e9868ab4263a89065d2e13a3922
+          created: 1774982477067
+          modified: 1775573274169
+          isPrivate: false
+          description: ""
+          sortKey: -1774982477067
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "1",
+                "descricao": "Sala"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Sala/alterar
+        name: alterar
+        meta:
+          id: req_03a202617f3f420bacc4fecdae6724d1
+          created: 1774983049001
+          modified: 1775573802671
+          isPrivate: false
+          description: ""
+          sortKey: -1774983049001
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "999",
+                "descricao": "Sala Alterada",
+                "andar": "",
+                "capacidade": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Sala/desativar
+        name: desativar
+        meta:
+          id: req_000a9c746cf440549b43123a25c28fd4
+          created: 1774983175204
+          modified: 1775573603949
+          isPrivate: false
+          description: ""
+          sortKey: -1774983175204
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigoX": "1"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Horario
+    meta:
+      id: fld_e3ac905004a442278c15e22fca942342
+      created: 1775570746298
+      modified: 1775570746298
+      sortKey: -1775570746298
+      description: ""
+    children:
+      - url: http://localhost/mapa/index.php/Horario/inserir
+        name: inserir
+        meta:
+          id: req_a317306b4af3489786eeb1fe5fc0abac
+          created: 1775570761517
+          modified: 1775573660657
+          isPrivate: false
+          description: ""
+          sortKey: -1775570761517
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "descricao": "Manhã",
+                "horaInicial": "07:00"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Horario/consultar
+        name: consulta
+        meta:
+          id: req_a6231e1a3eb34cd29bf8b4c1d2e87623
+          created: 1775571341840
+          modified: 1775573696747
+          isPrivate: false
+          description: ""
+          sortKey: -1775571341840
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "",
+                "descricao": ""
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Horario/alterar
+        name: alterar
+        meta:
+          id: req_b9cb976ffa72490db1baa451fc432bc0
+          created: 1775571549125
+          modified: 1775573748828
+          isPrivate: false
+          description: ""
+          sortKey: -1775571549125
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigo": "1",
+                "descricao": "Manhã Alterada"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost/mapa/index.php/Horario/desativar
+        name: desativar
+        meta:
+          id: req_03da73d77a2a47febfc0c377e0feece7
+          created: 1775572407280
+          modified: 1775573780276
+          isPrivate: false
+          description: ""
+          sortKey: -1775572407280
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "codigoX": "1"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b19e8bd465c43b0a319dbe3632ebe12214a351fd
+    created: 1773354443406
+    modified: 1773354443406
+environments:
+  name: Base Environment
+  meta:
+    id: env_b19e8bd465c43b0a319dbe3632ebe12214a351fd
+    created: 1773354443404
+    modified: 1773354443404
+    isPrivate: false
